@@ -3,13 +3,13 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: testscript
-  name: testscript
+    run: testgo
+  name: testgo
 spec:
   containers:
-  - image: script:latest
-    imagePullPolicy: IfNotPresent
-    name: testscript
+  - image: testgo:v1
+    imagePullPolicy: Never
+    name: testgo
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
