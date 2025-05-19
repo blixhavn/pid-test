@@ -1,3 +1,3 @@
-from ubuntu:16.04
+from ubuntu
 COPY mygo /srv/
 CMD ["/srv/mygo"]

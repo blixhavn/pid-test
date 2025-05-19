@@ -1,5 +1,5 @@
-from ubuntu:16.04
+from ubuntu
 RUN apt-get update
-RUN apt-get install -y python
+RUN apt-get install -y python3
 COPY mypy.py /srv/
-CMD ["python", "/srv/mypy.py"]
+CMD ["python3", "/srv/mypy.py"]
